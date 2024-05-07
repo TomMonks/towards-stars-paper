@@ -1,0 +1,224 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{multirow}
+
+\title{Response to reviewers}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+We thank both reviewers for their time to review the work and their suggestions to improve our manuscript. We have provided a detailed point by point response below.  In the below reviewer comments are highlighted in {\color{blue}blue}.  Any modified/new text added to the manuscript is highlighted in {\color{red}red}.
+
+\section{Reviewer 1 (R1)}
+
+{\color{blue}\textbf{R1}: I just read your paper addressing the STARS framework. I would like to congratulate you on really nice work, targeting a highly relevant topic for the simulation community. A nice instrument (STARS) is put forward to enable DES model re-use.}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:}  Many thanks for your kinds words and review. We very much hope it will help others share reusable models with the wider Modelling and Simulation community.  We have incorporated your suggestions and hope you agree it improves the manuscript.
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R1} The paper is heavily loaded with technical details, which may hurt reader overview. Therefore, for Section 4 on the STARS framework I suggest splitting main text and technical details on tools, standards etc., for example, by introducing tables for hosting details - separating these from the main line of reasoning. Also examples may be included in text boxes. Alternatively, appendices may be used.}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} We agree with the reviewer that section 4 needed improvement.  Also we apologise as there were some minor errors in formatting the section headings that perhaps added to the difficulty in following it. We had originally intended for this to be two separate sections and missed this on proof reading! So as you have recommended we have restructured the section into two: Section 4.) An overview of the framework including beneficiaries/users, and and 5.) a description of the components in the framework. Particularly in the new section 5 we have updated and moved some of the main text to the section introduction to aid the introduction to the framework.  We have also fixed the incorrect section levels for section 4.2 and 4.5. 
+
+We thought your suggestion of making more use of a table was a good one. As such we have also updated and expanded Table 3 to help readers (see main manuscript). This now provides an easy to follow list of all of the external artefacts presented in the manuscript (i.e. code repositories, interactive web apps, interactive documentation websites, and archives/DOIs).
+
+We considered the use of appendices, but felt that one of the main contributions of the work is the detail in section 5 and 6. We therefore chose to keep this in the main text and where we think it has more visibility. We hope that you understand this decision.
+
+
+
+
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R1} In the end actual model re-use is also very much about model and code understanding among re-users (beyond readability). In principle, such understanding builds on coding and modelling procedures that underlie the model candidating for re-use, compare Section 3.4.3. Clearly, quality of procedural support matters here.
+I would suggest to stress this a bit more in your discussion as an essential prerequisite for successful re-use.}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} Procedural report via documentation is a very important point and we completely agree with the reviewer that this is a pre-requisite for reuse.  We have added some additional emphasis in the discussion  (in section 7.1.3 \textit{barriers to open modelling}) as requested.  
+
+
+{\color{red}"We again emphasise that successful reuse of models will rely on good quality documentation (den Eynden et al., 2016). 
+
+The optional components offer substantial support to health care for open modelling and its accessibility, but by definition also add substantial work to a project. One strength of the technology we have used in our applied examples is that researchers can plan this work into their project from the beginning. For example, with enhanced model documentation, the initial tasks in a DES study could include creating a basic Quarto website (either locally, or published online). This could be comprised of the project README file initially, and as the project progresses expanded to include more usage support from the options we outline in section 5.2.1."}
+
+\vspace{0.2cm}
+
+We have also updated hypothetical ED example in section 4.1 (aims, outputs and beneficiaries) to emphasise the importance of procedural support.  The updated text is below:
+\vspace{0.2cm}
+
+\textit{This might include a web app interface version to the ED model, and specialist interactive documentation on the {\color{red}model design, code and procedural support in its use}.}
+
+
+
+\vspace{0.2cm}
+
+We hope you agree that this helps support the emphasis  of good documentation that we had already included throughout the manuscript and our decision to build documentation regarding how to (re)use models into the framework without being overly prescriptive on how exactly what detail is included for each model. For convenience we list these here:
+
+\begin{itemize}
+
+\item Section 3.3. cites the work of den Eyden et al (2016) who found that health researchers reuse of "code" was motivated by good quality documentation.
+
+\item Section 3.3 also include Table 1 (based on the DES review from Monks and Harper, 2023 also published in JoS) lists "support for running the model" as a best practice. This in turn was based leading open science research from the Alan Turing Institute and elsewhere.
+
+\item Section 4.1 discusses the aims of the framework and includes a hypothetical "ideal" use case where a reusable model has online interactive documentation that allows a user to explore how a model works and gain procedural support.
+
+\item Section 4.2.3 discusses the aim to make the framework compatible with existing documentation methods. For example, particular we signpost readers to TRACE which is a recent innovation. 
+
+\item Section 5 describes the framework in non-software specific terms.  We include "minimum documentation" (section 5.1.4) as an essential component of the framework (and we are prescriptive about what should be included). This doesn't completely cover all aspects of procedural support.  But we know from Monks and Harper (2023) that if followed this makes a model easier to be reused than the vast majority of models currently published.   We also include an optional component of enhanced documentation (section 5.2.1). This is the ideal scenario for reuse and we believe that the bullet points currently provided cover your point about procedural support.
+
+\item Section 6 provides three applied examples of documentation for models that are published online.  Two of these include full documentation websites for models. For example: \url{https://pythonhealthdatascience.github.io/stars-ciw-example} . See sections 6.2.4 and 6.4.5.
+
+\end{itemize}
+
+\section{Reviewer 2 (R2)}
+
+\noindent{\color{blue}\textbf{R2:} The authors provide a framework to share healthcare simulation models with the ultimate goal to increase the dissemination of these models that can ultimately benefit academics and practitioners. I found the paper very well written and not too far away from being publishable.}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} We again thank the reviewer for their time to review the paper and kind words. We are very grateful for the detailed comments.  A point by point response is below.
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R2:}In the abstract, the authors write "In the context of Free and...which include lack of time, reuse concerns". Please break this sentence down into two and expand a bit more what "lack of time" means in this context. Seems like an arbitrary statement and not really connected to the remainder of the abstract.}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} We thought the best way to address your concern was to simplify the abstract (in retrospect we were perhaps trying to include too much detail). The revised abstract is below with the main change highlighted in red.  This changes removes the discussion of lack of time and instead refers to general challenges.  
+
+\vspace{0.2cm}
+
+\textit{Discrete-event simulation (DES) is a widely used computational method in health services and health economic studies. Despite increasing recognition of the advantages of open, reusable DES models for both healthcare practitioners and simulation researchers, in practice very few authors share their model code alongside a published paper. {\color{red}In the context of Free and Open Source Software (FOSS), this paper presents a pilot framework called STARS: Sharing Tools and Artefacts for Reusable Simulations to begin to address the challenges and leverage the opportunities of sharing DES models in healthcare.} STARS aligns with existing guidelines and documentation, including reproducibility initiatives, and enables computer models to be shared with users of differing technical abilities.  We demonstrate the feasibility and applicability of STARS with three applied DES examples using Python. Our framework supports the development of open, reusable DES models which can enable partner healthcare organisations to preview, validate, and use models. Academic research teams can benefit from knowledge exchange, enhanced recognition and scrutiny of their work, and long-term archiving of models.}
+
+\vspace{0.2cm}
+
+Just for clarity, \textit{lack of time} here referred to a finding from multiple surveys of open science practice i.e. that researchers often felt that they did not have sufficient time to undertake open science, or that the work to make their models open was take too long to be worthwhile. Our pilot framework is designed to tackle this challenge in particular.
+
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R2:}The study aims in section 2 could maybe be merged with the introduction and rephrased as research questions. Like (1) "What are the barriers to sharing DES?" (2) "What is the evidence in the literature in terms of barriers"...}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} Yes this is an excellent point. We had only listed our research objectives.  The overarching question of our study regarded the \textit{feasibility} of overcoming well documented barriers to open science, but specifically in the context of DES and FOSS tools.  We planned four research objectives in the design and test of our study to answer that question. We have modified the aims section as below (changes in red).  This included some rephrasing of objectives to improve clarity.  We believe that this along with the changes to the discussion (see our response to your next point) should help answer your "so what" question. Thank you for your help!  Note that we felt that a separate aims section helped with clarity.
+
+\vspace{0.2cm}
+
+{\color{red}Our overarching research question asked \textit{is it feasible to overcome existing barriers to open and reusable DES models in healthcare?}  To answer this question we set the following four research objectives:}
+
+\label{sec:aims}
+\begin{enumerate}
+    \item {\color{red}Review the model and code sharing literature to identify the opportunities and barriers to sharing DES models in health;}
+    \item {\color{red}Design and propose a new framework for sharing FOSS DES models in health;}
+    \item Test the feasibility of the framework for sharing Python models using existing FOSS technology;
+    \item Identify current limitations of the approach and future research direction.  
+\end{enumerate}
+
+
+
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R2:} But then picking up on these research questions in the final section of the manuscript. Because there is, at the moment, a bit of a disconnect between the study aims and I asked myself the question while reading the end of the paper "so what. Have these study aims be achieved?"}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} Yes after re-reading we agree that we did not make this clear enough. Thank you for identifying this oversight. We have re-written the beginning of the discussion section. We hope that you agree that with the changes to the aims section and our response below that we have answered your "so what" question.
+
+\vspace{0.2cm}
+
+\textit{{\color{red}In this study, we have demonstrated that it is feasible to share open and reusable DES models for healthcare research using existing FOSS and Open Science technology. As evidence that our proposed framework is usable we have provided three applied examples of varying complexity using Python and DES FOSS tools. Other researchers could, if desired, adopt our approach to share their own DES models and research artefacts. While our framework approach works towards overcoming the well-known barriers to open science that our review identified, we note that there are still many challenges for the M\&S community going forward. We now describe the strengths and contributions of the STARS framework, its current limitations, challenges for the M\&S healthcare community, and further work.
+}}
+
+\vspace{0.2cm}
+
+We have also provided a brief reminder of the final research objective (identify limitations) at the start of section 7.2 in the discussion.  The text is below.
+
+\vspace{0.2cm}
+
+\textit{{\color{red}The final objective of the study was to identify limitations of the framework and remaining open science challenges for the M\&S community.  We detail these in this section.}}
+
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R2:}Section 3 i.e. literature would benefit from a table or a figure that has a summary statistics. Maybe provide a graph that reveals how OR/MS models have been shared increasingly in the last couple of years. A table that quickly reveals that other disciplines share code/models but OR/MS and specifically DES have not been shared extensively would be useful.}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} We can certainly see where you are coming from with this request. In fact this was our original plan for the article.  However, the work to pull these numbers together for DES turned into a very substantive project in its own right and we ended up reading over 600 papers.  As such we published a supporting systematic scoping review in JoS at the end of last year (i.e. Monks and Harper, 2023; see \url{https://doi.org/10.1080/17477778.2023.2260772}). Given the breadth of material we needed to cover in this article, we felt that that a simple  summary in the main text with some sign posting provided a reader with sufficient information. In particular this provides yearly breakdown (between 2019 and 2022 inclusive) and breakdown by article type.
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R2:} Page 6 "C. Allen and Meher" remove "C."}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} We used the LaTeX template and natbib style files provided by the Journal of Simulation (Taylor and Frances). As there are two papers with an "Allen" as the first author this is correct according to the reference style guide (and automatically formatted). We believe any issues like this will be sorted during copy editing.
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R2: }Page 7 Change ORCIDS to ORCIDs}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} Thank you for spotting the typo. This has been fixed.
+
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R2: }Figure 1 has a very UKish view and not everyone knows NHS. Also, given more and more analytics and modelling teams exist, I'm not sure whether it is typically a "researcher" who develops the models and/or algorithms. Furthermore, "managers" and "planners" are missing in the group of "model users" who then write the SBAR reports based on the DES model outputs and feed the results to the Execs.}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} Yes. Sorry for the oversight - most of our applied work is with the NHS in the UK and we sometimes get a bit focused down on their needs.  We have updated Figure 1 in the main text as below. Rather than have specifics of "planners" we have just opted for healthcare services and patients as long term beneficiaries.  We have also added "modellers" as a general term for people who are building DES models. Hopefully this will capture the breadth of analytics and data science teams in health consultancy and research.
+
+\begin{figure}[h!]
+\centering
+    \includegraphics[scale=0.70]{images/stars_aims_paper.png}
+    \caption{{\color{red}Outputs and beneficiaries of the STARS framework}}
+    \label{fig:stars_aims}
+\end{figure}
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R2: }Section 5.2.1 Is it 12am (midnight)?}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} Thank for spotting this mistake. We have updated to "midnight".  Please note that due to restructuring this is now in section 6.2.1.
+
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R2: }Again, in section 6.1.2. the writing is very NHS centric and not all of JOS' readership are familiar with it.}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} Yes we agree this needs to be updated. We have removed all reference to the NHS and instead use the terms {\color{red}"healthcare analyst/modeller"} and {\color{red}"health service organisation"}.  Please note that due to restructuring this change can now be found in section 7.1.2.
+
+
+\vspace{0.5cm}
+
+\noindent{\color{blue}\textbf{R2: } Conclusion 2nd paragraph. "Barriers and disincentives... concerns about how models might be resued, and the additional time and effort required." My take is that the 2nd part of the sentence is a bit disconnected or reads awkward.}
+
+\vspace{0.2cm}
+
+\noindent\textbf{Author Response:} Thanks for spotting this issue.  After a review, we believe that a subtle change in the phrasing and use of semi-colons helps readability.
+
+\vspace{0.2cm}
+
+{\color{red}\textit{Barriers and disincentives to open modelling include the additional time and effort required for the work; technical challenges associated with FOSS software and sharing models; and concerns about how models might be reused}.}
+
+\end{document}
